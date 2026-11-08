@@ -28,6 +28,11 @@ const nextConfig: NextConfig = {
   typescript: {
     ignoreBuildErrors: false,
   },
+  experimental: {
+    serverActions: {
+      bodySizeLimit: "4000mb",
+    },
+  },
   async rewrites() {
     return [
       {
